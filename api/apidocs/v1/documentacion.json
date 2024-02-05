@@ -1,0 +1,257 @@
+{
+  "swagger": "3.0.0",
+  "servers": [
+    {
+      "description": "USDT - Create Invoices",
+      "url": "https://usdt.tiendabtc.com"
+    }
+  ],
+  "info": {
+    "description": "Create USDT Payment invoice on ERC20",
+    "version": "1.0.0",
+    "title": "Ethereum blockchain USDT Payment Processor",
+    "contact": {
+      "email": "ownstrpk4@gmail.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": ""
+    }
+  },
+  "tags": [
+    {
+      "name": "admins",
+      "description": "Secured Admin-only calls"
+    },
+    {
+      "name": "developers",
+      "description": "Operations available to regular developers"
+    }
+  ],
+  "paths": {
+    "/create_erc20_invoice.php": {
+      "post": {
+        "summary": "Creates an ERC20 usdt invoice",
+        "operationId": "createErc20",
+        "description": "Create an invoice on erc20, return an amount, QR, wallet and an ID.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/ERC20Body"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Finds an available wallet that is able to process payment",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Result"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Address not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/check_erc20_invoice.php": {
+      "get": {
+        "tags": [
+          "developers"
+        ],
+        "summary": "Crea una invoice en erc20",
+        "operationId": "checkErc20",
+        "description": "Checks if invoice ID is paid (should be called every 30, 20 or 15 seconds)                              \n",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "description": "ID of previously created invoice",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": 3108
+            }
+          },
+          {
+            "in": "query",
+            "name": "api",
+            "description": "api key, obtained from sales",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Finds an available wallet that is able to process payment",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Paid"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Address not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ErrorCheck"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Result": {
+        "type": "object",
+        "required": [
+          "amount",
+          "bc",
+          "api",
+          "wallet"
+        ],
+        "properties": {
+          "amount": {
+            "type": "number",
+            "format": "decimal",
+            "example": 100.5
+          },
+          "id": {
+            "type": "integer",
+            "example": 3108
+          },
+          "qr": {
+            "type": "string",
+            "example": "https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=0x40Af09e5c77A89a385808F06F96c928c7d8bC849&choe=UTF-8"
+          },
+          "wallet": {
+            "type": "string",
+            "format": "string",
+            "example": "0x41675c0166678284C05C7d90fC963cC2Dd38F910"
+          }
+        }
+      },
+      "Error": {
+        "type": "object",
+        "required": [
+          "status",
+          "msg"
+        ],
+        "properties": {
+          "status": {
+            "type": "integer",
+            "example": "400"
+          },
+          "msg": {
+            "type": "string",
+            "example": "No ERC20 address available try again in 15 minutes"
+          }
+        }
+      },
+      "ErrorCheck": {
+        "type": "object",
+        "required": [
+          "status",
+          "status_obj"
+        ],
+        "properties": {
+          "status": {
+            "type": "integer",
+            "example": "400"
+          },
+          "status_obj": {
+            "type": "string",
+            "example": "false"
+          }
+        }
+      },
+      "Paid": {
+        "type": "object",
+        "required": [
+          "status_obj",
+          "address",
+          "hash",
+          "amount"
+        ],
+        "properties": {
+          "status_obj": {
+            "type": "string",
+            "format": "message",
+            "example": "true"
+          },
+          "address": {
+            "type": "string",
+            "example": "0xeff7c33947a22bf3d074cdf3a8869c1e6eef359a"
+          },
+          "hash": {
+            "type": "string",
+            "format": "0x...",
+            "example": "0x6b52d14fb73d26ec4f6d6c5826debca64176dfd82c38a4ff9e8f8a9b5e739c20"
+          },
+          "amount": {
+            "type": "number",
+            "example": 0.21
+          }
+        }
+      },
+      "ERC20Body": {
+        "type": "object",
+        "required": [
+          "amount",
+          "bc",
+          "api"
+        ],
+        "properties": {
+          "amount": {
+            "type": "number",
+            "format": "USDT",
+            "example": 150
+          },
+          "bc": {
+            "type": "string",
+            "example": "erc20"
+          },
+          "api": {
+            "type": "string",
+            "format": "your_api_key",
+            "example": "your api key here"
+          }
+        }
+      }
+    }
+  }
+}

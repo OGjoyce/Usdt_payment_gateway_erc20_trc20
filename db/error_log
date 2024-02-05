@@ -1,0 +1,56 @@
+[18-Oct-2023 12:50:31 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'orbchan1_tiendabtc'@'localhost' (using password: YES) in /home4/orbchan1/public_html/usdt/db/conn.php on line 9
+[18-Oct-2023 12:50:31 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 11
+[18-Oct-2023 12:50:34 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'orbchan1_tiendabtc'@'localhost' (using password: YES) in /home4/orbchan1/public_html/usdt/db/conn.php on line 9
+[18-Oct-2023 12:50:34 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 11
+[18-Oct-2023 12:50:55 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'orbchan1_tiendabtc'@'localhost' (using password: YES) in /home4/orbchan1/public_html/usdt/db/conn.php on line 9
+[18-Oct-2023 12:50:55 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 11
+[18-Oct-2023 13:03:51 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'orbchan1_tiendabtc'@'localhost' (using password: YES) in /home4/orbchan1/public_html/usdt/db/conn.php on line 9
+[18-Oct-2023 13:03:51 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 11
+[18-Oct-2023 13:03:51 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 17
+[18-Oct-2023 13:03:51 America/Boise] PHP Fatal error:  Uncaught Error: Call to a member function close() on bool in /home4/orbchan1/public_html/usdt/db/conn.php:28
+Stack trace:
+#0 {main}
+  thrown in /home4/orbchan1/public_html/usdt/db/conn.php on line 28
+[18-Oct-2023 13:04:53 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'orbchan1_tiendabtc'@'localhost' (using password: YES) in /home4/orbchan1/public_html/usdt/db/conn.php on line 9
+[18-Oct-2023 13:04:53 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 11
+[18-Oct-2023 13:04:53 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 17
+[18-Oct-2023 13:04:53 America/Boise] PHP Fatal error:  Uncaught Error: Call to a member function close() on bool in /home4/orbchan1/public_html/usdt/db/conn.php:28
+Stack trace:
+#0 {main}
+  thrown in /home4/orbchan1/public_html/usdt/db/conn.php on line 28
+[18-Oct-2023 13:04:56 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'orbchan1_tiendabtc'@'localhost' (using password: YES) in /home4/orbchan1/public_html/usdt/db/conn.php on line 9
+[18-Oct-2023 13:04:56 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 11
+[18-Oct-2023 13:04:56 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 17
+[18-Oct-2023 13:04:56 America/Boise] PHP Fatal error:  Uncaught Error: Call to a member function close() on bool in /home4/orbchan1/public_html/usdt/db/conn.php:28
+Stack trace:
+#0 {main}
+  thrown in /home4/orbchan1/public_html/usdt/db/conn.php on line 28
+[18-Oct-2023 13:06:37 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'orbchan1_tiendabtc'@'localhost' to database 'orbchan1_wallets' in /home4/orbchan1/public_html/usdt/db/conn.php on line 9
+[18-Oct-2023 13:06:37 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 11
+[18-Oct-2023 13:06:37 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 17
+[18-Oct-2023 13:06:37 America/Boise] PHP Fatal error:  Uncaught Error: Call to a member function close() on bool in /home4/orbchan1/public_html/usdt/db/conn.php:28
+Stack trace:
+#0 {main}
+  thrown in /home4/orbchan1/public_html/usdt/db/conn.php on line 28
+[18-Oct-2023 13:07:58 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'orbchan1_tiendabtc'@'localhost' to database 'orbchan1_wallets' in /home4/orbchan1/public_html/usdt/db/conn.php on line 9
+[18-Oct-2023 13:07:58 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 11
+[18-Oct-2023 13:07:58 America/Boise] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home4/orbchan1/public_html/usdt/db/conn.php:14
+Stack trace:
+#0 {main}
+  thrown in /home4/orbchan1/public_html/usdt/db/conn.php on line 14
+[18-Oct-2023 13:08:49 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'orbchan1_tiendabtc'@'localhost' to database 'orbchan1_wallets' in /home4/orbchan1/public_html/usdt/db/conn.php on line 9
+[18-Oct-2023 13:08:49 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 11
+[18-Oct-2023 13:08:49 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 14
+[18-Oct-2023 13:08:49 America/Boise] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home4/orbchan1/public_html/usdt/db/conn.php on line 16
+[18-Oct-2023 13:08:49 America/Boise] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 25
+[18-Oct-2023 13:10:02 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'orbchan1_tiendabtc'@'localhost' to database 'orbchan1_wallets' in /home4/orbchan1/public_html/usdt/db/conn.php on line 9
+[18-Oct-2023 13:10:02 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 11
+[18-Oct-2023 13:10:02 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 14
+[18-Oct-2023 13:10:02 America/Boise] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home4/orbchan1/public_html/usdt/db/conn.php on line 16
+[18-Oct-2023 13:10:02 America/Boise] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 25
+[18-Oct-2023 13:10:03 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'orbchan1_tiendabtc'@'localhost' to database 'orbchan1_wallets' in /home4/orbchan1/public_html/usdt/db/conn.php on line 9
+[18-Oct-2023 13:10:03 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 11
+[18-Oct-2023 13:10:03 America/Boise] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 14
+[18-Oct-2023 13:10:03 America/Boise] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home4/orbchan1/public_html/usdt/db/conn.php on line 16
+[18-Oct-2023 13:10:03 America/Boise] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, bool given in /home4/orbchan1/public_html/usdt/db/conn.php on line 25
+[18-Oct-2023 13:10:50 America/Boise] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'orbchan1_tiendabtc'@'localhost' to database 'orbchan1_wallets' in /home4/orbchan1/public_html/usdt/db/conn.php on line 9

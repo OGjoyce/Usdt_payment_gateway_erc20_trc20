@@ -1,0 +1,10 @@
+html{box-sizing:border-box;overflow-y:scroll;}
+*,*:before,*:after{box-sizing:inherit;}
+body{margin:0;background:#fafafa;}
+
+.base-url + .link > .url,
+.swagger-ui .topbar .download-url-wrapper{display:none!important;}
+.swagger-ui table tbody tr.property-row td{border-top:1px solid #CCC;padding:10px !important;}
+.swagger-ui .model-box{width:max-content;}
+.swagger-ui .response-col_description .markdown p{color:#9F9F9F;}
+a[href*="validator.swagger.io"]{display:none;}
