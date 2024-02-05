@@ -144,7 +144,7 @@
             
           
             
-            
+        //functions
             
             //Function that is able to check if transaction is set.
             function checkTx(){
