@@ -1,4 +1,5 @@
-# Usdt_paymeny_gateway_erc20
+# Usdt_payment_gateway_erc20_trc20
+This code will helo you to create your own payment gateway or for a company, please enjoy >:)
 To start is very simple:
 1. Install PHP
 2. Instal Mysql (I used phpmyadmin) for this example
